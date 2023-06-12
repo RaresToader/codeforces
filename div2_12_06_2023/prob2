@@ -33,7 +33,10 @@ public class Main {
                     curMax = curMin;
                     curMin = next;
                 }
-                else if(!oneSorted){
+                else if(oneSorted){
+                    sb.append('0');
+                }
+                else{
                     if(next >= curMin && next <= curMax){
                         sb.append('1');
                         curMin = next;
